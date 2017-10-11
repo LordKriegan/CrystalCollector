@@ -22,12 +22,16 @@ var game = {
 		game.compAmt = getRandomInt(19, 120);
 		game.userAmt = 0;
 		game.gameOver = false;
+		game.wins = 0;
+		game.losses = 0;
 		game.red = getRandomInt(1, 12);
 		game.yellow = getRandomInt(1, 12);
 		game.blue = getRandomInt(1, 12);
 		game.green = getRandomInt(1, 12);
 		$("#compAmt").html(game.compAmt.toString());
 		$("#userAmt").html(game.userAmt.toString());
+		$("#wins").html(game.wins.toString());
+		$("#losses").html(game.losses.toString());
 		$("#playAgain").css("display", "none");
 	},
 	addAmt: function(x) {
