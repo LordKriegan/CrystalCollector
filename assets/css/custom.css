@@ -1,0 +1,79 @@
+body {
+    background-image: url(../images/background.png);
+    background-color: #006dcc;
+}
+
+#navigation,
+.navbar,
+.navbar-default {
+    background: #006dcc;
+}
+
+/*https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3*/
+/* Title */
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+/* Link */
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+/*end of navbar links changing color*/
+.jumbotronStyles {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+.btnStyles {
+    background: rgba(0, 109, 204, 0);
+    border-style: none;
+    margin-bottom: 10px;
+}
+
+#playAgain {
+    display: none;
+}
+
+#instrOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+#instrDiv {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 15px;
+    background: #006dcc;
+    padding: 5px;
+}
+
+.centerContainer {
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+}
