@@ -22,8 +22,6 @@ var game = {
 		game.compAmt = getRandomInt(19, 120);
 		game.userAmt = 0;
 		game.gameOver = false;
-		game.wins = 0;
-		game.losses = 0;
 		game.red = getRandomInt(1, 12);
 		game.yellow = getRandomInt(1, 12);
 		game.blue = getRandomInt(1, 12);
@@ -82,6 +80,8 @@ window.onload = function() {
 	});
 	$("#reset").on("click", function() {
 		if (confirm("This will reset the entire game.\nAre you sure?")) {
+			game.wins = 0;
+			game.losses = 0;
 			game.init();
 		}
 	});
